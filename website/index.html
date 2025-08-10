@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Once Upon a Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="shader-bg"></canvas>
+
+  <div class="content">
+<header>
+  <h1 class="main-title">A Magical Journey Through Code</h1>
+  <p class="subtitle">Embark on an enchanting adventure where each chapter unveils a new world of creativity, logic, and wonder. Follow the story as it unfolds—crafted with code and imagination.</p>
+
+  <nav class="nav-buttons">
+    <button onclick="goToChapter('ch1/chapter1.html')">Chapter 1</button>
+    <button onclick="goToChapter('ch2/chapter2.html')">Chapter 2</button>
+    <button onclick="goToChapter('ch3/chapter3.html')">Chapter 3</button>
+    <button onclick="castSpell()">🪄 Cast a Spell</button>
+  </nav>
+
+  <p class="surprise-text">✨ A surprise awaits with every chapter... dare to turn the page?</p>
+</header>
+
+
+    <main id="chapter-container">
+      <p class="loading">Loading your story...</p>
+    </main>
+
+    <footer>
+    </footer>
+  </div>
+
+  <script src="shader.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

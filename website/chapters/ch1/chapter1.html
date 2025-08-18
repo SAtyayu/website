@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chapter 1 – The Kingdom of HTML</title>
+  <link rel="stylesheet" href="ch1.css" />
+</head>
+<body>
+  <canvas id="shader-bg"></canvas>
+
+  <div class="content">
+    <header>
+      <h1 class="chapter-title">Chapter 1: The Kingdom of HTML</h1>
+      <button class="spell-btn" onclick="castSpell()">🪄 Cast a Spell</button>
+    </header>
+
+    
+<section class="story">
+  <h1>Chapter 1: The Kingdom of HTML</h1>
+
+  <p>
+    Once upon a website, a curious traveler discovered a door labeled
+    <strong>HTML</strong>—the HyperText Markup Language. Inside, a whole kingdom
+    of structure awaited: titles for grand halls, paragraphs for whispered tales,
+    lists for inventories, images for murals, and links for portals to faraway lands.
+  </p>
+
+  <p>
+    Every page in this kingdom began the same way: with a promise that the story
+    would be told clearly and consistently. That promise is the <code>&lt;!DOCTYPE html&gt;</code>.
+    It tells the browser, “This story follows modern rules.”
+  </p>
+
+  <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is the beginning of my story.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+  </pre>
+
+  <h2>The Great Hall: &lt;html&gt;, &lt;head&gt;, and &lt;body&gt;</h2>
+  <p>
+    The outer walls of the castle are the <code>&lt;html&gt;</code> tag. The castle has two main wings:
+    <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code>.
+  </p>
+  <ul>
+    <li><strong>&lt;head&gt;</strong>: secret scrolls for the browser—title, metadata, icons, and links to styles.</li>
+    <li><strong>&lt;body&gt;</strong>: the stage where your story is seen—text, images, sections, navigation, and more.</li>
+  </ul>
+
+  <h2>Headings: Royal Decrees</h2>
+  <p>
+    Headings announce importance. There are six ranks, from <code>&lt;h1&gt;</code> (the crown) to
+    <code>&lt;h6&gt;</code> (a small note). Use them to outline your story logically.
+  </p>
+  <pre>
+&lt;h1&gt;The Adventure Begins&lt;/h1&gt;
+&lt;h2&gt;A Call to Code&lt;/h2&gt;
+&lt;h3&gt;Gathering the Tools&lt;/h3&gt;
+  </pre>
+
+  <h2>Paragraphs &amp; Emphasis: The Voice of the Story</h2>
+  <p>
+    Paragraphs (<code>&lt;p&gt;</code>) carry the narrative. Use <code>&lt;strong&gt;</code> for strong importance and
+    <code>&lt;em&gt;</code> for emphasis (usually italics).
+  </p>
+  <pre>
+&lt;p&gt;Every tag has a purpose, and &lt;strong&gt;meaning&lt;/strong&gt; matters.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Structure first&lt;/em&gt;, style later.&lt;/p&gt;
+  </pre>
+
+  <h2>Lists: Inventories &amp; Checklists</h2>
+  <p>Lists organize knowledge. Use unordered lists for collections, and ordered lists for steps.</p>
+  <pre>
+&lt;ul&gt;
+  &lt;li&gt;Characters&lt;/li&gt;
+  &lt;li&gt;Places&lt;/li&gt;
+  &lt;li&gt;Artifacts&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Open your editor&lt;/li&gt;
+  &lt;li&gt;Create index.html&lt;/li&gt;
+  &lt;li&gt;Write your first heading&lt;/li&gt;
+&lt;/ol&gt;
+  </pre>
+
+  <h2>Links &amp; Images: Portals and Murals</h2>
+  <p>
+    Links (<code>&lt;a&gt;</code>) open portals. Images (<code>&lt;img&gt;</code>) paint scenes.
+    Remember: images need <code>alt</code> text for accessibility.
+  </p>
+  <pre>
+&lt;a href="https://developer.mozilla.org/" target="_blank"&gt;Visit the Library (MDN)&lt;/a&gt;
+
+&lt;img src="castle.png" alt="A silver castle under starlight" /&gt;
+  </pre>
+
+  <h2>Sections: Rooms Within the Castle</h2>
+  <p>
+    Break your tale into meaningful rooms: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+    <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>,
+    <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code>.
+  </p>
+  <pre>
+&lt;header&gt;
+  &lt;h1&gt;Once Upon a Website&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;a href="#chapter-1"&gt;Chapter 1&lt;/a&gt;
+    &lt;a href="#chapter-2"&gt;Chapter 2&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/header&gt>
+
+&lt;main&gt;
+  &lt;section id="chapter-1"&gt;
+    &lt;h2&gt;Foundations&lt;/h2&gt;
+    &lt;article&gt;A focused story within the section.&lt;/article&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;© Your Name&lt;/footer&gt;
+  </pre>
+
+  <h2>Attributes: Secret Runes</h2>
+  <p>
+    Tags gain power through attributes. For example, <code>href</code> on links, <code>src</code> and <code>alt</code> on images,
+    <code>id</code> for uniquely naming elements, and <code>class</code> for styling groups.
+  </p>
+  <pre>
+&lt;a href="/chapters/ch2/chapter2.html" class="next"&gt;Next Chapter&lt;/a&gt;
+&lt;img src="banner.jpg" alt="A banner waving in the wind" class="hero" /&gt;
+  </pre>
+
+  <h2>Forms: Speaking to the Castle</h2>
+  <p>
+    Forms let visitors talk back—search, sign-up, send messages.
+  </p>
+  <pre>
+&lt;form action="/search" method="get"&gt;
+  &lt;label for="q"&gt;Search&lt;/label&gt;
+  &lt;input id="q" name="q" placeholder="Find wisdom..." /&gt;
+  &lt;button type="submit"&gt;Go&lt;/button&gt;
+&lt;/form&gt;
+  </pre>
+
+  <h2>Best Practices: The Guild’s Oath</h2>
+  <ul>
+    <li>One <code>&lt;h1&gt;</code> per page; nest headings in order.</li>
+    <li>Write meaningful <code>alt</code> text for images.</li>
+    <li>Use semantic tags for structure and accessibility.</li>
+    <li>Keep content in HTML, style in CSS, behavior in JS.</li>
+    <li>Validate your HTML to catch mistakes early.</li>
+  </ul>
+
+  <h2>Mini Quest</h2>
+  <ol>
+    <li>Create a new section with a heading and two paragraphs.</li>
+    <li>Add an image with descriptive <code>alt</code> text.</li>
+    <li>Make a list of three things your site will teach.</li>
+    <li>Add a link that jumps to Chapter 2.</li>
+  </ol>
+
+  <h2>Next Steps</h2>
+  <p>
+    You’ve learned the bones of the web. In the next chapter, we’ll dress our story in color,
+    spacing, and elegance with CSS. When you’re ready, step through the portal:
+  </p>
+
+  <p style="margin-top:1rem;">
+    <a href="../ch2/chapter2.html" class="btn-next" style="
+      display:inline-block;
+      padding:0.8rem 1.2rem;
+      border-radius:12px;
+      text-decoration:none;
+      color:#fff;
+      background:rgba(255,255,255,0.12);
+      border:1px solid rgba(255,255,255,0.2);
+      backdrop-filter: blur(6px);
+    ">Go to Chapter 2 →</a>
+  </p>
+
+  <p style="opacity:0.85;margin-top:2rem;">
+    Tip: Tap “🪄 Cast a Spell” anytime to shift the mood lighting of the realm.
+  </p>
+</section>
+
+  </div>
+
+  
+  <script src="../../shader.js"></script>
+  
+  <script src="ch1script.js"></script>
+</body>
+</html>

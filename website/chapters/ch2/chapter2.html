@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 2 – The Magic of CSS</title>
+  <link rel="stylesheet" href="ch2.css">
+</head>
+<body>
+  <canvas id="shader-bg"></canvas>
+
+  <div class="content">
+    <header>
+      <h1>Chapter 2: The Magic of CSS</h1>
+      <button id="cast-spell">🪄 Cast a Spell</button>
+      <button id="next-chapter">Go to Chapter 3 →</button>
+    </header>
+
+    <main>
+      <section class="story">
+        <h1>Chapter 2: The Magic of CSS</h1>
+
+        <p>
+        Welcome back, young coder! Now that you have learned the bones of the web in Chapter 1 with HTML, it is time to dress your kingdom in colors, shapes, and styles. This is the realm of <strong>CSS</strong>, the Cascading Style Sheets. CSS allows you to transform plain HTML into a visually enchanting experience.
+        </p>
+
+        <h2>The Power of Selectors</h2>
+        <p>
+        Selectors are the magical runes that tell CSS which elements to style. You can choose elements by their name, class, or id.
+        </p>
+        <pre>
+/* By element name */
+p {
+  color: #fff;
+}
+
+/* By class */
+.intro {
+  font-size: 1.2rem;
+}
+
+/* By id */
+#main-title {
+  text-align: center;
+}
+        </pre>
+
+        <h2>Colors and Backgrounds</h2>
+        <p>
+        The kingdom of CSS is vibrant! You can change colors, backgrounds, and even add gradients. Here’s how you can give life to your pages:
+        </p>
+        <pre>
+body {
+  background-color: #1a1a2e;
+  color: #f0f0f0;
+}
+
+h1 {
+  color: #ff6f61;
+}
+
+section {
+  background: linear-gradient(135deg, #6b5b95, #feb236);
+  padding: 2rem;
+  border-radius: 12px;
+}
+        </pre>
+
+        <h2>Fonts and Text</h2>
+        <p>
+        CSS lets you control typography, giving your story a voice. You can adjust font-family, size, weight, spacing, and even style.
+        </p>
+        <pre>
+p {
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+        </pre>
+
+        <h2>Layout: Boxes and Flow</h2>
+        <p>
+        Every HTML element is a box. CSS helps you arrange these boxes using <code>display</code>, <code>flex</code>, and <code>grid</code>.
+        </p>
+        <pre>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+        </pre>
+
+        <h2>Borders, Padding, and Margins</h2>
+        <p>
+        Borders frame your boxes, padding adds breathing room inside, and margins separate them from other elements.
+        </p>
+        <pre>
+.card {
+  border: 2px solid #ff6f61;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+        </pre>
+
+        <h2>Interactive Magic</h2>
+        <p>
+        CSS can respond to user actions! The <code>:hover</code> pseudo-class lets elements react when hovered over.
+        </p>
+        <pre>
+button:hover {
+  background-color: #9f7aea;
+  transform: scale(1.05);
+}
+        </pre>
+
+        <h2>Animations and Transitions</h2>
+        <p>
+        You can make your elements move and glow! Transitions and keyframes allow smooth animations.
+        </p>
+        <pre>
+.box {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  background-color: #feb236;
+}
+        </pre>
+
+        <h2>Mini Quest</h2>
+        <ol>
+          <li>Create a heading and style it with a new font and color.</li>
+          <li>Add a background gradient to a section.</li>
+          <li>Create three cards with borders, padding, and hover effects.</li>
+          <li>Arrange the cards using flex or grid layout.</li>
+        </ol>
+      </section>
+    </main>
+  </div>
+
+  <script src="../../shader.js"></script>
+  <script src="ch2script.js"></script>
+  <script>
+    document.getElementById("next-chapter").addEventListener("click", () => {
+      window.location.href = "../ch3/chapter3.html";
+    });
+  </script>
+</body>
+</html>
+

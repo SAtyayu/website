@@ -1,8 +1,7 @@
-# website
-website
+# Learteractive
 Interactive Learning Experience
 Description
-A simple and interactive learning platform designed for hackathons. Users can engage with lessons, quizzes, and hands-on exercises that make learning more fun and memorable. The project focuses on interactivity over complexity, providing an immediate, engaging experience.
+A simple and interactive learning platform . Users can engage with lessons, quizzes, and hands-on exercises that make learning more fun and memorable. The project focuses on interactivity over complexity, providing an immediate, engaging experience.With great visuals and use interface this projects helps others to learn.
 
 Features
 Interactive quizzes with instant feedback
@@ -23,5 +22,3 @@ Open index.html in any modern browser
 Tech Stack
 HTML, CSS, JavaScript
 
-Contribution
-Open for suggestions, fixes, or improvements.

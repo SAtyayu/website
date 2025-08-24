@@ -10,15 +10,6 @@ Simple, visual learning modules
 
 Easy to use in a browser
 
-How to Run
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/your-username/interactive-learning.git
-Open index.html in any modern browser
-
 Tech Stack
 HTML, CSS, JavaScript
 
